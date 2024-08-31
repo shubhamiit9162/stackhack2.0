@@ -1,0 +1,197 @@
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  position: inherit;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.checkbox {
+  margin-left: 10px;
+  cursor: pointer;
+  accent-color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.castSection {
+  margin-top: 20px;
+}
+.closeButton{
+  padding: 5px 11px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.newCastForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addButton {
+  background-color: #2ecc71;
+}
+
+.addButton:hover {
+  background-color: #27ae60;
+}
+
+.castContainer {
+  margin-top: 20px;
+}
+
+.castItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 2px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.castImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin:1px;
+}
+
+.removeButton {
+  background-color: #e74c3c;
+  margin:3px 5px 0px 0px;
+}
+
+.removeButton:hover {
+  background-color: #c0392b;
+}
+.previewContainer {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.previewContainer h3 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.previewItem {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.previewItem p {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.previewItem a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.previewItem a:hover {
+  text-decoration: underline;
+}
+.submissionMessage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submissionMessage h3 {
+  color: #2ecc71;
+}
+
+.addMoreButton {
+  background-color: #3498db;
+}
+
+.addMoreButton:hover {
+  background-color: #2980b9;
+}
+
+.submitButton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.submitButton:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.submitButton:hover:enabled {
+  background-color: #2980b9;
+}

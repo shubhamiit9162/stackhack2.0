@@ -1,0 +1,49 @@
+.navigation{
+    display: none;
+}
+.li:hover{
+   color: white;
+}
+.a{
+  color: #25292c;
+  font-weight: 650;
+}
+@media (max-width:991px) {
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    z-index: 1000; 
+  }
+  
+  .navitems {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .navitem {
+    flex-grow: 1; /* Allows items to grow and take equal space */
+    text-align: center; /* Centers the text inside each item */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Adds padding for better touch targets */
+  }
+  
+  .navitem:hover {
+    background-color: #495057; /* Hover effect for better visibility */
+  }
+  
+  .icon {
+    font-size: 1.6rem;
+    vertical-align: middle;
+    margin-bottom: 5px;
+  }
+}
+.yourComponentClass {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

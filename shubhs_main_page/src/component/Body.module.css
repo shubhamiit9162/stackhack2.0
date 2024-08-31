@@ -1,0 +1,105 @@
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3vw;
+  width: 100vw;
+}
+
+.bodyHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bodyHeader h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+}
+
+.bodyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bodySection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background: transparent; /* Default transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bodyText {
+  z-index: 2; /* Text content on top */
+  width: 50%;
+}
+
+.bodySection img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Take up half of the section */
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Image behind text */
+  opacity: 0.8; /* Increased opacity for better image visibility */
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%); /* Clip to make it blend into text area */
+}
+
+.bodySection h2, .bodySection p {
+  position: relative;
+  z-index: 2; /* Ensure text is in front of the image */
+  color: #333; /* Text color */
+}
+
+.bodySection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bodySection p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 991px) {
+  .bodyHeader h1 {
+    font-size: 2rem;
+  }
+
+  .bodySection {
+    flex-direction: column;
+    padding: 1rem; /* Adjusted padding for better spacing */
+    background: rgba(255, 255, 255, 0.9); /* Light background for better contrast on mobile */
+  }
+
+  .bodyText {
+    width: 100%;
+  }
+
+  .bodySection img {
+    width: 100%;
+    opacity: 0.5; /* Lower opacity for mobile to improve text contrast */
+    clip-path: none;
+  }
+
+  .bodySection h2 {
+    font-size: 1.5rem;
+  }
+
+  .bodySection p {
+    font-size: 0.9rem;
+  }
+}
+.yourComponentClass {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

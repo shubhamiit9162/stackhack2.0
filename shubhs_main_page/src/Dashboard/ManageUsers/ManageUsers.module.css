@@ -1,0 +1,44 @@
+/* Updated AdminDashboard.module.css */
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto; /* Added margin for separation */
+  background-color: #f7f9fc; /* Changed to a light blue-gray */
+  border-radius: 12px; /* Increased border-radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darkened shadow */
+  position: relative;
+  display: block; /* Ensure it behaves as a block */
+}
+
+.head {
+  display: block; /* Changed to block for stacking */
+  text-align: center; /* Center aligned for block format */
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 26px; /* Slightly larger font size */
+  margin-bottom: 15px; /* Reduced margin */
+  color: #2c3e50; /* Dark blue-gray color */
+  font-weight: bold; /* Made the font bold */
+  text-align: center; /* Center aligned for block */
+  display: block;
+}
+
+.closeButton {
+  padding: 7px 14px; /* Slightly larger padding */
+  border: 2px solid #e74c3c; /* Changed to a red border */
+  border-radius: 50%; 
+  background-color: #e74c3c; /* Red background */
+  color: white; /* White text */
+  position: absolute; /* Positioning to allow placement */
+  top: 20px; /* Positioned at the top right corner */
+  right: 20px;
+  cursor: pointer;
+  display: block; /* Block format */
+}
+
+
+
+

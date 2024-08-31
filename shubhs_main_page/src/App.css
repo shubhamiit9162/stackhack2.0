@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: rgb(92, 58, 58);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.navbar {
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #9fc6e9;
+  outline: none; 
+  box-shadow: none; 
+}
+
+.form-control:hover {
+  background-color: #08233a;
+}
+
+@media (max-width: 991px) {
+  .mobileMenu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    border-top: 1px solid #0b0b0b;
+    z-index: 1000;
+  }
+
+  .mobileMenu .nav-link {
+    display: block;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .mobileMenu .nav-link:hover {
+    background-color: #495057;
+  }
+}
+
+.location-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: #a69a3d;
+  border: none; 
+  padding: 0; 
+  margin: -2.1vw; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 8px 15px;
+  color: #fff; 
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #495057;
+}
+
+.dropdown-menu input.form-control {
+  border: none; 
+  background-color: #495057; 
+  color: #fff;
+  outline: none; 
+  box-shadow: none; 
+}
+/* Global theme variables */
+body.light-mode {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Ensure your components inherit these variables */
+.yourComponentClass {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

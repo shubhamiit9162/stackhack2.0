@@ -1,0 +1,163 @@
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+}
+
+.icon, .icon2 {
+  font-size: 1.8rem;
+  margin-right: 8px;
+  color: var(--icon-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover, .icon2:hover {
+  color: var(--icon-hover-color);
+}
+
+.navbarBrand {
+  height: 45px;
+  width: 110px;
+  transition: transform 0.3s ease;
+}
+
+.navbarBrand:hover {
+  transform: scale(1.05);
+}
+
+.profile, .search, .modeToggle {
+  margin-left: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.profile:hover, .search:hover, .modeToggle:hover {
+  color: var(--hover-text-color);
+}
+
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 1rem;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--icon-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.searchIcon:hover {
+  color: var(--icon-hover-color);
+}
+
+.mobnavbar {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .profile, .search {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbarBrand {
+    width: 90px;
+    height: 35px;
+  }
+
+  .searchContainer {
+    margin-left: 0;
+  }
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: var(--modal-background-color);
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 550px;
+  text-align: center;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark-mode .header {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+.dark-mode .icon, .dark-mode .icon2 {
+  color: #b3b3b3;
+}
+
+.dark-mode .icon:hover, .dark-mode .icon2:hover {
+  color: #ffffff;
+}
+
+.dark-mode .modalContent {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+/* Light mode styles */
+.light-mode .header {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.light-mode .icon, .light-mode .icon2 {
+  color: #6c757d;
+}
+
+.light-mode .icon:hover, .light-mode .icon2:hover {
+  color: #495057;
+}
+
+.light-mode .modalContent {
+  background: #ffffff;
+  color: #212529;
+}
+
+/* Custom CSS Variables */
+:root {
+  --primary-color: #4CAF50; /* Adjust this color for header background */
+  --secondary-color: #FFFFFF; /* Adjust this color for header text */
+  --icon-color: #757575; /* Default icon color */
+  --icon-hover-color: #FFFFFF; /* Icon hover color */
+  --hover-text-color: #D3D3D3; /* Text hover color */
+  --modal-background-color: #FFFFFF; /* Default modal background */
+}

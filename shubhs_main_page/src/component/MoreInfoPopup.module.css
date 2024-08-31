@@ -1,0 +1,156 @@
+/* MoreInfoPopup.module.css */
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    z-index: 1000;
+    color: whitesmoke;
+}
+
+.popupContent {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2vw;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px gray;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width: 60vw;
+    height: 80vh;
+    max-height: 90vh;
+    position: relative;
+    text-align: center;
+    max-width: 800px; /* Limit the max width of the popup */
+    overflow: hidden; /* Hide overflow for the entire popup content */
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    z-index: 1001; /* Ensure close button is above all content */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    position: sticky;
+    padding: 10px;
+    z-index: 1000; /* Ensure header is above all content */
+}
+
+.details {
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    max-height: calc(80vh - 80px); /* Adjust height to fit within the viewport minus header and padding */
+    overflow-y: auto; /* Enable scrolling for the content */
+    padding-right: 10px; /* Prevent content from being cut off */
+}
+
+.infoContainer {
+    margin-top: 20px;
+}
+
+.languageAndIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.adultIcon {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.genreReleaseDuration {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cast {
+    margin-top: 20px;
+}
+
+.castImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    max-height: 300px; /* Set a max height to control overflow */
+}
+
+.castItem {
+    text-align: center;
+    max-width: 100px; /* Limit the width of each cast item */
+    flex: 1 1 auto;
+}
+
+.castImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.movieStory {
+    margin-top: 20px;
+}
+
+.movieTrailer {
+    margin-top: 20px;
+}
+
+.movieTrailer video {
+    width: 100%; /* Make video take full width of container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit height if necessary */
+}
+
+@media (max-width: 991px) {
+    .popupContent {
+      width: 95vw;
+      height: 80vh; /* Increased height for better mobile view */
+      padding: 20px; /* Reduced padding for better fit on smaller screens */
+    }
+  }
+  .yourComponentClass {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 600px) {
+    .popupContent {
+      width: 100vw; /* Full width for very small screens */
+      height: 85vh; /* Almost full height for very small screens */
+      padding: 15px; /* Further reduced padding */
+    }
+  
+    .closeBtn {
+      font-size: 20px; 
+      top: 10px;
+      right: 10px;
+    }
+  
+    h2 {
+      font-size: 20px; 
+    }
+  }

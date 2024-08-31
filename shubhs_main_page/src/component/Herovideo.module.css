@@ -1,0 +1,138 @@
+.videocontainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: -25vh;
+  z-index: 0;
+}
+
+.videocontainer video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-color: black;
+}
+
+.contentContainer {
+  position: absolute;
+  bottom: 16vh;
+  left: 5vw;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  color: whitesmoke;
+  margin-bottom: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.bookButton,
+.infoButton {
+  background-color: transparent;
+  color: gray;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1vw;
+}
+.bookButton:hover {
+  color: white;
+  background-color: gray;
+}
+.infoButton:hover{
+  color: white;
+  background-color: gray;
+}
+.bookButton:last-child {
+  margin-right: 0;
+}
+
+.muteButton {
+  position: absolute;
+  right: 30px;
+  bottom:25vh;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.icon3 {
+  font-size: 2rem;
+  color: gray;
+}
+
+.leftButton,
+.rightButton {
+  position: absolute;
+  top: 50vh;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.leftButton {
+  left: 10px;
+}
+
+.rightButton {
+  right: 10px;
+}
+
+.iconNav {
+  font-size: 3rem;
+  color: gray;
+}
+
+@media (max-width:991px) {
+  .videocontainer {
+    top: -35vh;
+  }  
+  .videocontainer video {
+    object-fit: contain;
+  }
+
+  .contentContainer {
+    bottom: 24.2vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .muteButton {
+    bottom: 40vh;
+    right: 1vw;
+  }
+  .title {
+    font-size: 1rem;
+    margin-bottom:0.5vw;
+  }
+  .leftButton,
+.rightButton {
+  font-size: 1rem;
+}
+}
+.yourComponentClass {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

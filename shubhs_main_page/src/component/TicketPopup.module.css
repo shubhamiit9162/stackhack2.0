@@ -1,0 +1,124 @@
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better contrast */
+  z-index: 1000;
+}
+
+.popupContent {
+  background:transparent;
+  color: rgb(99, 21, 21); 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px gray;
+  width: 60vw; /* Adjust width for better fit */
+  max-height: 80vh;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popupContent:hover {
+  transform: scale(1.02);
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #e2adad;
+  transition: color 0.3s ease-in-out;
+}
+
+.closeBtn:hover {
+  color: #ff4d4d86; /* Change close button color on hover */
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.downloadButton {
+  background-color: #3c444d95;
+  color: rgb(38, 12, 12);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.downloadButton:focus {
+  outline: none;
+}
+
+.ticketDetails {
+  background: gray;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.ticketDetails p {
+  margin: 5px 0;
+}
+
+.ticketDetails .label {
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .popupContent {
+    width: 95vw;
+    height: 80vh; /* Increased height for better mobile view */
+    padding: 20px; /* Reduced padding for better fit on smaller screens */
+  }
+}
+@media (max-width: 600px) {
+  .popupContent {
+    width: 100vw; /* Full width for very small screens */
+    height: 85vh; /* Almost full height for very small screens */
+    padding: 15px; /* Further reduced padding */
+  }
+
+  .closeBtn {
+    font-size: 20px; 
+    top: 10px;
+    right: 10px;
+  }
+
+  h2 {
+    font-size: 20px; 
+  }
+}

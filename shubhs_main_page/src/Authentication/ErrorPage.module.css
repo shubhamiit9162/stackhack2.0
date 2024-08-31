@@ -1,0 +1,31 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.errorCode {
+  font-size: 10rem;
+  margin: 0;
+  color: #ff4d4d;
+}
+
+.errorMessage {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.homeLink {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}

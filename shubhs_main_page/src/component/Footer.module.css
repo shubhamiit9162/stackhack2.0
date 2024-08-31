@@ -1,0 +1,97 @@
+/* Updated Footer Styles */
+
+.footer {
+  background-color: #1a1a1a; /* Dark background for contrast */
+  color: #f0f0f0; /* Light text color for readability */
+  padding: 2.5rem 2rem; /* Increased padding for spaciousness */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem; /* Slightly larger font size */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px; /* Slightly reduced max-width for better centering */
+  padding: 0 1.5rem;
+  margin-bottom: 2rem; /* Increased margin for better spacing */
+}
+
+.brandTag {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px; /* Adjusted max-width for a more compact look */
+  max-height: 70px; /* Adjusted max-height */
+  object-fit: contain;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column; /* Stack content vertically */
+}
+
+.address {
+  text-align: right;
+  font-size: 1rem; /* Slightly larger for better readability */
+}
+
+.centerSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem; /* Increased gap between icons */
+}
+
+.socialIcons a {
+  color: #f0f0f0; /* Light color for contrast */
+  font-size: 1.8rem; /* Slightly larger icon size */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.socialIcons a:hover {
+  color: #00aced; /* Light blue hover effect for social icons */
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1.2rem; /* Slightly increased gap */
+  margin-bottom: 2rem; /* Increased margin for spacing */
+}
+
+.link {
+  color: #f0f0f0; /* Light link color */
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.copyright {
+  text-align: center;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  font-size: 0.85rem; /* Slightly reduced font size */
+  color: #999; /* Softer color for copyright text */
+}
+
+.yourComponentClass {
+  background-color: #282828; /* Darker background for better contrast */
+  color: #e0e0e0; /* Light text for better readability */
+}
